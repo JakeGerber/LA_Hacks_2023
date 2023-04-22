@@ -1,0 +1,65 @@
+.overview-list {
+  width: 100%;
+  padding: 10px 20px;
+  background:#f3f2ef;
+  box-sizing: border-box;
+  border-radius: 6px;
+  position: relative;
+  margin: 12px 20px 12px 20px;
+  justify-content: space-between;
+}
+
+
+
+.overview-card {
+    width: 100%;
+    padding: 10px 20px;
+    background: #f3f2ef;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    margin: 12px 20px 12px 20px;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  
+   
+  .overview-card p {
+    text-align: left;
+    color:#2c3f14;
+  }
+  
+  .overview-card h2 {
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #2c3f14;
+  }
+    
+  .overview-card .upvote {
+    display: flex;
+    gap: 5px;
+    font-size: 20px;;
+    color:#2c3f14;
+  }
+  
+  .overview-card .upvote-button {
+    border: 0px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .overview-card .upvote-button:active {
+    transform: translateY(3px);
+  }
+
+  button{
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  button span{
+    margin-left: 5px;
+  }
