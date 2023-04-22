@@ -3,7 +3,8 @@
 Submitted by:
 - Gabriela Liera
 - Jake Gerber
-- 
+- Saamarth Sethi
+
 
 ## Overview
 
