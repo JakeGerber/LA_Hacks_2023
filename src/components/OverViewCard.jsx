@@ -5,8 +5,7 @@ import "./OverViewCard.css"
 
 //pass a json object of top 3 companies
 const OverViewCard = ({title, top3}) => {
-
-  
+ 
 
   return (
     <div className='overview-list'>
