@@ -4,6 +4,7 @@ Submitted by:
 - Gabriela Liera
 - Jake Gerber
 - Saamarth Sethi
+- Tyrus Tracey
 
 
 ## Overview
