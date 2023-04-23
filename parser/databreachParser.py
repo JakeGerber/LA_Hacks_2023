@@ -45,22 +45,15 @@ for excel_file in excel_files:
         #print(v)
         #under 50k, 150k, 500k, 1 million, 5million, > 5 million
         if v[0] <= 50000:
-            #print("#F5A6A6")
             v.append("#F5A6A6")
         elif v[0] <= 150000:
-            #print("#EC6A6A")
-            v.append("#F5A6A6")
+            v.append("#EC6A6A")
         elif v[0] <= 500000:
-            #print("#E23434")
-            v.append("#F5A6A6")
-
+            v.append("#E23434")
         elif v[0] <= 5000000:
-            #print("#D21010")
-            v.append("#F5A6A6")
-
+            v.append("#D21010")
         elif v[0] > 5000000:
-            #print("#FF0000")
-            v.append("#F5A6A6")
+            v.append("#FF0000")
         
     print(temp.values())
     
