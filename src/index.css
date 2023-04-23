@@ -67,3 +67,14 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+#mapid{
+  display: flex;
+  position: relative;
+  height: 180px;
+  width: 75%;
+  border-radius: 10px;
+  top: 105px;
+  left: 0;
+  z-index: 1;
+}
