@@ -8,16 +8,16 @@ const NavBar = () => {
 
   return (
     <nav>
-      <img src={logo} alt="Logo" width="100" height="100" />
-      
+      <Link to="/">
+        <img src={logo} alt="Logo" width="200" height="200" />
+      </Link>
       <div className="side-links">
-        <Link to="/"><h2>Home</h2></Link>
-        <Link to="/layoff"><h2>Layoff Notices</h2></Link>
+        <Link to="/layoff"><h2>Layoff Notices | </h2></Link>
         <Link to="/breach"><h2>Data Breaches</h2></Link>
         <div className="buttons">
           <Link to='/login'>Login</Link>        
         </div>
-      </div>     
+      </div>
     </nav>
   )
 }
