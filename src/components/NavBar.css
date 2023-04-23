@@ -8,7 +8,7 @@ nav {
 
 
 nav a {
-    color: #2c3f14;
+    color: #440000;
     margin: 10px 5px 10px 5px;
     text-decoration: none;
     font-size: 18px;
@@ -18,7 +18,8 @@ nav a {
 }
 
 nav h1 {
-    color: #2c3f14;
+    font-family:'Agency FB';
+    color: #461000;
     font-size: 50px;
 }
 
@@ -36,7 +37,7 @@ nav .side-links{
 
 
 nav .buttons{
-    background-color: #4bc18a;
+    background-color: #ff5922;
     color: #ffffff;
     padding: 10px 20px;
     margin-left: 20px;

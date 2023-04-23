@@ -1,13 +1,14 @@
 
 import { Link } from 'react-router-dom';
 import "./NavBar.css"
+import logo from '../assets/BREACHWARNing.png'
 
 
 const NavBar = () => {
 
   return (
     <nav>
-      <h1>Nav Bar/CompanyLogo</h1>
+      <img src={logo} alt="Logo" width="100" height="100" />
       
       <div className="side-links">
         <Link to="/">Home</Link>
