@@ -18,18 +18,17 @@
   .center{
     text-align: center;
     font-size: 200%;
-  
+
   }
   
   .cbox {
     margin: auto;
     width: 30%;
     padding: 10px;
-    background-color: #22abca;
+    background-color: #f3f2ef;
     border-radius: 10px 5%;
     margin-top: 2%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  
   }
   
   .img {
@@ -38,17 +37,16 @@
   
   }
   
-  
   .text1 {
     margin-top: 0%;
-    color: red;
+    color: #961414;
     font-size: 300%;
     margin-bottom: 0%;
   }
   
   .text2 {
-    color: white;
-    font-size: 220%;
+    color: #fe7300;
+    font-size: 280%;
   }
   
   .bigContainer {
