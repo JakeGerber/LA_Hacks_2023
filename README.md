@@ -13,18 +13,11 @@ Submitted by:
 
 ## Application Features
 
-The following REQUIRED features are completed:
 
-- [] A create form that allows the user to create posts
-
-The following STRETCH features are implemented:
-
-
-The following EXTRA features are implemented: None
 
 ## Project Demo
 
-🌐 [See the project deployed here!]()
+🌐 [See the project deployed here!](https://breachwarning.netlify.app/)
 
 ![usage of crewmates project in gif form](readme_demo.gif)
 
@@ -35,7 +28,11 @@ The following EXTRA features are implemented: None
 * [React](https://www.npmjs.com/package/react)
 * [React-DOM](https://www.npmjs.com/package/react-dom)
 * [React Router DOM](https://www.npmjs.com/package/react-router-dom) (v.6)
-* [Supabase-JS](https://www.npmjs.com/package/@supabase/supabase-js)
+* [React0usa-map](https://www.npmjs.com/package/react-usa-map)
+* [LeaftJS](https://leafletjs.com/index.html)
+* [Pandas](https://www.npmjs.com/package/pandas-js)
+* [Selenium](https://www.npmjs.com/package/selenium-webdriver)
+* [Schedule](https://www.npmjs.com/package/node-schedule)
 
 ---
 
@@ -63,7 +60,7 @@ Visit the web application in the browser
 http://localhost:3000/
 ```
 
-### Deploy TravelHub
+### Deploy BreachWARNing
 
 To deploy this application on Netlify, run the following in the repo directory:
 
