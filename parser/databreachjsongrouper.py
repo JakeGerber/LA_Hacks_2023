@@ -23,14 +23,14 @@ for filename in os.listdir(json_dir):
             for company in data:
                 # Add the number of employees to the existing total for the company
                 try:
-                    no_affected = int(company['Individuals Affected'])
+                    no_affected = int(company['individualsaffected'])
                 except ValueError:
                     # Handle non-integer values
                     no_affected = 0
-                if company['Name of Covered Entity'] in company_employees:
-                    company_employees[company['Name of Covered Entity']] += no_affected
+                if company['nameofcoveredentity'] in company_employees:
+                    company_employees[company['nameofcoveredentity']] += no_affected
                 else:
-                    company_employees[company['Name of Covered Entity']] = no_affected
+                    company_employees[company['nameofcoveredentity']] = no_affected
 
 
 # Sort the dictionary by the number of employees in descending order
@@ -40,7 +40,7 @@ sorted_companies = sorted(company_employees.items(), key=lambda x: x[1], reverse
 top_companies = sorted_companies[:top_n]
 
 # Create a new JSON object with the top companies
-result = [{'company': c[0], 'individuals affected': c[1]} for c in top_companies]
+result = [{'company': c[0], 'individualsaffected': c[1]} for c in top_companies]
 
 # Save the result to a new JSON file
 output_path = grouped_dir + 'top'+str(top_n)+'companies.json'

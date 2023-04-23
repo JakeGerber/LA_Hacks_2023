@@ -24,15 +24,20 @@ if not os.path.exists(json_dir):
 for excel_file in excel_files:
     df = pd.read_excel(os.path.join(excel_dir, excel_file))
     
+    # Cleaning up column names
+    df.columns = [x.lower() for x in df.columns]
+    df = df.rename(columns=lambda x: x.replace('\n', ' '))
+    df = df.rename(columns=lambda x: x.replace('.', ''))
+    df = df.rename(columns=lambda x: x.replace('/', 'or'))
+    df = df.rename(columns=lambda x: x.replace(' ', ''))
+    
     # Dict of all columns
     fullDict = df.to_dict(orient='records')
     
-    breaches = df["State"].tolist()
-    affected = df["Individuals Affected"].tolist()
+    breaches = df["state"].tolist()
+    affected = df["individualsaffected"].tolist()
 
-    #print(affected)
-
-    # Aggregate dict - grouped by state, sum no. of affected
+# Aggregate dict - grouped by state, sum no. of affected
     stateSumDict = dict()
 
     for i in range(len(breaches)):
