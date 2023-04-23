@@ -6,7 +6,6 @@ const BreachMap = ({data}) => {
   const [US_State, setUS_State] = useState("")
   const [US_DataBreach, setUS_DataBreach] = useState()
 
-
   const [temp, setTemp] = useState(Object.assign({}, data))
   
   const [t, setT] = useState({    NJ: {
