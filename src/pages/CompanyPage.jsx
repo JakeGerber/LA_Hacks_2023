@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
+import Map from "../components/Map"
 
 const CompanyPage = ({ data }) => {
   const { id } = useParams();
@@ -19,7 +20,7 @@ const CompanyPage = ({ data }) => {
         <li>Notice Date: {company.noticedate}</li>
         <li>Effective Date: {company.effectivedate}</li>
     </ul>
-    Google Map api!!
+    <Map address={company.address}/>
     
     </div>
   );
