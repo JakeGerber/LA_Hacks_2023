@@ -1,5 +1,4 @@
-import {Link} from 'react-router-dom';
-import CompanyPage from '../pages/CompanyPage';
+
 
 const Card = ({data}) => {
     return (
