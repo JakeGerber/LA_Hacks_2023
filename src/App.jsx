@@ -10,6 +10,7 @@ import warnData from '../parser/jsondata/warn/warn_report_1.json'
 import top3Layoff from "../parser/jsondata/warn/grouped/top3companies.json"
 import top3Breach from "../parser/jsondata/hhs/grouped/top3companies.json"
 import breachData from "../parser/jsondata/hhs/breach_report_stateAgg.json"
+import LoginTemp from './components/LoginTemp'
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
         <Route path="/layoff" element={<Layoff companies={warnData}/>}/>
         <Route path="/layoff/:id" element={<CompanyPage data={warnData} />} />
         <Route path="/breach" element={<BreachMap data={breachData}/>}/>
-        <Route path="/login" element/>
+        <Route path="/login" element={<LoginTemp string='Never Get Blindsided. Track Your Company.'/>}/>
       </Routes>   
     </>
   )
