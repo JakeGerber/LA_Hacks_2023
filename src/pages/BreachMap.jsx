@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import USAMap from 'react-usa-map';
+import "./BreachMap.css"
+import logo from "../assets/BREACHWARNing.png"
 
 
 const BreachMap = ({data}) => {
@@ -190,14 +192,19 @@ const BreachMap = ({data}) => {
   
   
   return (
-    <div className="App">
-      <h1>WOWOWOOWW</h1>
-      <h2>{temp.KS[0]}</h2>
-      <h1>{US_DataBreach}</h1>
-      {console.log(temp["AK"])}
+    <div className='App'>
+      <div className='bigContainer'>
       <USAMap customize={statesCustomConfig} onClick={mapHandler} />
-      <h1>WOW {US_State}</h1>
+
+      <div className="cbox">
+        <img src={logo} className='img'/>
+        <h1 className='center text1'>{US_DataBreach}</h1>
+        <h1 className='center text1'>Users Affected</h1>
+        <h1 className='center text2'>{US_State}</h1>
+      </div>
+      </div>
     </div>
+
     
   );
 };
