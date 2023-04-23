@@ -16,7 +16,8 @@
     "pandas-js": "^0.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.10.0"
+    "react-router-dom": "^6.10.0",
+    "react-usa-map": "^1.5.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
