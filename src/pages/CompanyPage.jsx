@@ -16,10 +16,11 @@ const CompanyPage = ({ data }) => {
       <p> No. of Employees: {company.noofemployees}</p>
       <p>Receive Date: {parseDate(company.receiveddate)}</p>
       <p>Notice Date: {parseDate(company.noticedate)}</p>
-      <p> Effective Date: {parseDate(company.effectivedate)}</p>
-    
-    <Map address={company.address}/>
-    
+      <p>Effective Date: {parseDate(company.effectivedate)}</p>
+      <div>
+      <Map address={company.address}/>
+      </div>
+      
     </div>
   );
 }
