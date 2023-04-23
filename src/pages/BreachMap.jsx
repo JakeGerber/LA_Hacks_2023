@@ -194,8 +194,8 @@ const BreachMap = ({data}) => {
   return (
     <div className='App'>
       <div className='bigContainer'>
-      <USAMap customize={statesCustomConfig} onClick={mapHandler} />
-
+  
+        <USAMap customize={statesCustomConfig} onClick={mapHandler} />
       <div className="cbox">
         <img src={logo} className='img'/>
         <h1 className='center text1'>{US_DataBreach}</h1>

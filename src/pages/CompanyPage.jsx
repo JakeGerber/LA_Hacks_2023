@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 import Map from "../components/Map"
+import "./CompanyPage.css"
+import {parseDate} from "../utils/parseDate" 
 
 const CompanyPage = ({ data }) => {
   const { id } = useParams();
@@ -9,16 +11,13 @@ const CompanyPage = ({ data }) => {
 
   return (
     <div className="company-page">
-      <h2>Company: {company.company}</h2>
-      <p>Address: {company.address}</p>
-      <p>County: {company.countyorparish}</p>
-      No. of Employees: {company.noofemployees}
-
-      <ul>
-        <li>Receive Date: {company.receiveddate}</li>
-        <li>Notice Date: {company.noticedate}</li>
-        <li>Effective Date: {company.effectivedate}</li>
-    </ul>
+      <h2>{company.company}</h2>
+      <p>{company.address}<br/>County: {company.countyorparish}</p>
+      <p> No. of Employees: {company.noofemployees}</p>
+      <p>Receive Date: {parseDate(company.receiveddate)}</p>
+      <p>Notice Date: {parseDate(company.noticedate)}</p>
+      <p> Effective Date: {parseDate(company.effectivedate)}</p>
+    
     <Map address={company.address}/>
     
     </div>
