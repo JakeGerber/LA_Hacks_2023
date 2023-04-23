@@ -36,7 +36,7 @@ const CardList = ({ companies }) => {
       <div>
         <div className="options">
           <div className="order-by">
-            <span>Order by:</span>
+          <span style={{fontSize: "35px", fontStyle: "bold"}}>Order by:</span>
             <button style={{ backgroundColor: orderBy === "effectivedate" ? "#961414" : "#fe7300" }} onClick={() => setOrderBy("effectivedate")}>
               Future/Recent Effective Date
             </button>
