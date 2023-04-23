@@ -8,6 +8,7 @@ import CompanyPage from './pages/CompanyPage'
 import warnData from './parser/warn_report.json'
 import top3Layoff from './parser/top3companies.json'
 import top3Breach from './parser/top3companies.json'
+import breachData from "./parser/breach_report.json"
 
 function App() {
 
