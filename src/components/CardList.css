@@ -1,0 +1,11 @@
+.order-by button{
+    background-color: #ff5922;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin-left: 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer; 
+    justify-content: center;
+    text-align: center;
+}
