@@ -1,0 +1,19 @@
+.company-page {
+    width: 100%;
+    padding: 10px 20px;
+    background: #f3f2ef;
+    box-sizing: border-box;
+    border-radius: 10px;
+    position: relative;
+    margin: 12px 20px 12px 20px;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.company-page h2{
+    font-size: 45px;
+}
+.company-page p {
+    font-size:20px;
+   
+  }

@@ -1,0 +1,31 @@
+  
+  .single-card {
+      width: 100%;
+      padding: 10px 20px;
+      background: #f3f2ef;
+      box-sizing: border-box;
+      border-radius: 10px;
+      position: relative;
+      margin: 12px 20px 12px 20px;
+      justify-content: space-between;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+      
+    .single-card p {
+      text-align: left;
+      color:#2c3f14;
+    }
+    
+    .single-card h2 {
+      text-align: left;
+      font-family: sans-serif;
+      font-size: 30px;
+      color: #2c3f14;
+    }
+      
+   
+    
+    
+  
+
+  
