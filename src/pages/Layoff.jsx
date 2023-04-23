@@ -1,18 +1,21 @@
 import React, { useEffect, useState} from "react";
-import Card from "../components/Cards";
-import {Link} from 'react-router-dom';
+import CardList from "../components/CardList";
+import { Routes, Route, Link, Outlet} from "react-router-dom"
 
 
-const LayOff = ({companies}) => {
+const Layoff = ({companies}) => {
     
 console.log("layoff");
 console.log(companies)
     return(
         <div className="layoff">
            <h1>layoff page</h1>
-           <Card companies={companies}/>
+           <CardList companies={companies}/>
+           <Outlet/>
         </div>
     );
 }
 
-export default LayOff;
+export default Layoff;
+
+
