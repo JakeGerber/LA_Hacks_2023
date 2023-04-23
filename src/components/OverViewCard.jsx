@@ -1,24 +1,24 @@
-
+// Import OverViewCard CSS styles
 import "./OverViewCard.css"
 
-//Include the top 3 companies with largest number of employee in past month
-
-//pass a json object of top 3 companies
+// This component includes the top 3 companies with largest number of employees in past month
+// It takes a JSON object of top 3 companies as props
 const OverViewCard = ({title, top3}) => {
  
-
+  // Render the component with the given title and top 3 companies
   return (
     <div className='overview-list'>
-        <h3>{title}</h3>
+        <h1>{title}</h1>
         {top3 && Object.entries(top3).map(([key, value]) => (
+          // For each company in the top 3, render an overview card with the company name and number of employees
           <div className="overview-card" key={key}>
-            <h2>{value.name}</h2>
-            <p>No. of Employees: {value.number}</p>
-            <p>Effective Date: {value.date}</p>
+            <h2>{value.company}</h2>
+            <p>No. of Employees: {value.noofemployees}</p>
           </div>
         ))}
     </div>
   )
 }
 
+// Export the OverViewCard component for use in other parts of the app
 export default OverViewCard;
