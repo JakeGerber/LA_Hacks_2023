@@ -11,9 +11,9 @@ const NavBar = () => {
       <img src={logo} alt="Logo" width="100" height="100" />
       
       <div className="side-links">
-        <Link to="/">Home</Link>
-        <Link to="/layoff">Layoff Notices</Link>
-        <Link to="/breach">Data Breaches</Link>
+        <Link to="/"><h2>Home</h2></Link>
+        <Link to="/layoff"><h2>Layoff Notices</h2></Link>
+        <Link to="/breach"><h2>Data Breaches</h2></Link>
         <div className="buttons">
           <Link to='/login'>Login</Link>        
         </div>

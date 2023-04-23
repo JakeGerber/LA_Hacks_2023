@@ -12,9 +12,9 @@ const OverViewCard = ({title, top3}) => {
         {top3 && Object.entries(top3).map(([key, value]) => (
           // For each company in the top 3, render an overview card with the company name and number of employees
           <div className="overview-card" key={key}>
-            <h2>{value.company}</h2>
-            { value.noofemployees ? <p>No. of Employees: {value.noofemployees}</p> : <div></div>}
-            { value.individualsaffected ? <p>Individuals Affected: {value.individualsaffected}</p> : <div></div>}
+            <h1>{value.company}</h1>
+            { value.noofemployees ? <p><h2>{value.noofemployees}</h2> employees</p> : <div></div>}
+            { value.individualsaffected ? <p><h2>{value.individualsaffected}</h2> affected</p> : <div></div>}
           </div>
         ))}
     </div>

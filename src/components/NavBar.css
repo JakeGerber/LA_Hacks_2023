@@ -33,6 +33,8 @@ nav .search-input {
 
 nav .side-links{
     display: flex;
+    margin-left: 50px;
+    text-align: justify;
 }
 
 
@@ -44,6 +46,6 @@ nav .buttons{
     border-radius: 25px;
     border: none;
     cursor: pointer; 
-    justify-content: center;
+    justify-content: middle;
     text-align: center;
 }

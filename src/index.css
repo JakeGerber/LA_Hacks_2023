@@ -32,8 +32,10 @@ body {
 }
 
 h1 {
+  font-family: 'Agency FB';
   font-size: 3.2em;
   line-height: 1.1;
+  color:rgba(32, 1, 1, 0.87)
 }
 
 button {

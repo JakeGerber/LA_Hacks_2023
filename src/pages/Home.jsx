@@ -4,8 +4,10 @@ const Home = ({layoff, breach}) => {
     
     return(
         <div className="home">
-           <OverViewCard title="Top 3 Layoffs" top3={layoff}/>
-           <OverViewCard title="Top 3 Breaches" top3={breach}/>
+             <div className="row">
+                <div className="column"><OverViewCard title="Top 3 Layoffs" top3={layoff}/></div>
+                <div className="column"><OverViewCard title="Top 3 Breaches" top3={breach}/></div>
+            </div> 
         </div>
     );
 }
