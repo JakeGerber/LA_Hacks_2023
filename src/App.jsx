@@ -12,7 +12,7 @@ import top3Breach from "../parser/jsondata/warn/grouped/top3companies.json"
 import breachData from "../parser/jsondata/breach/breach_report.json"
 
 function App() {
-
+  console.log("warn")
   console.log(warnData)
   return (
     <>
