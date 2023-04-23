@@ -6,9 +6,9 @@ import Home from './pages/Home'
 import Layoff from  './pages/Layoff'
 import CompanyPage from './pages/CompanyPage'
 import BreachMap from './pages/BreachMap'
-import warnData from '../parser/jsondata/warn_report_1.json'
-import top3Layoff from '../parser/jsondata/grouped/top3companies.json'
-import top3Breach from '../parser/jsondata/grouped/top3companies.json'
+import warnData from '../parser/jsondata/warn/warn_report_1.json'
+import top3Layoff from "../parser/jsondata/warn/grouped/top3companies.json"
+import top3Breach from "../parser/jsondata/warn/grouped/top3companies.json"
 import breachData from "../parser/jsondata/breach/breach_report.json"
 
 function App() {
