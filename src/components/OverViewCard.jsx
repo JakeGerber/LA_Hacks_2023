@@ -13,7 +13,8 @@ const OverViewCard = ({title, top3}) => {
           // For each company in the top 3, render an overview card with the company name and number of employees
           <div className="overview-card" key={key}>
             <h2>{value.company}</h2>
-            <p>No. of Employees: {value.noofemployees}</p>
+            { value.noofemployees ? <p>No. of Employees: {value.noofemployees}</p> : <div></div>}
+            { value.individualsaffected ? <p>Individuals Affected: {value.individualsaffected}</p> : <div></div>}
           </div>
         ))}
     </div>
