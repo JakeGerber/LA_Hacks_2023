@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "company": "Meta Platforms, Inc.",
+        "noofemployees": 2726
+    },
+    {
+        "company": "Smithfield Distribution, LLC",
+        "noofemployees": 1876
+    },
+    {
+        "company": "Dreyer's Grand Ice Cream, Inc.",
+        "noofemployees": 1213
+    }
+]

@@ -16,34 +16,34 @@ if not os.path.exists(excel_dir):
 excel_files = [f for f in os.listdir(excel_dir) if (f.endswith('.xlsx') or (f.endswith('.xls')))]
 
 # Create the "jsondata" directory if it doesn't exist
-json_dir = 'jsondata/breach/'
+json_dir = 'jsondata/hhs/'
 if not os.path.exists(json_dir):
     os.makedirs(json_dir)
     print('Created output directory at: ' + json_dir)
 
 for excel_file in excel_files:
     df = pd.read_excel(os.path.join(excel_dir, excel_file))
-    #print(df.keys())
-
+    
+    # Dict of all columns
+    fullDict = df.to_dict(orient='records')
+    
     breaches = df["State"].tolist()
     affected = df["Individuals Affected"].tolist()
 
     #print(affected)
 
-    temp = dict()
+    # Aggregate dict - grouped by state, sum no. of affected
+    stateSumDict = dict()
 
     for i in range(len(breaches)):
         if type(breaches[i]) == str:
-            if breaches[i] not in temp:
-                temp[breaches[i]] = [affected[i]]
+            if breaches[i] not in stateSumDict:
+                stateSumDict[breaches[i]] = [affected[i]]
             else:
-                temp[breaches[i]][0] += affected[i]
+                stateSumDict[breaches[i]][0] += affected[i]
 
-
-    for k, v in temp.items():
-        print(v)
-        #print(v)
-        #under 50k, 150k, 500k, 1 million, 5million, > 5 million
+    # Create a color range based on no. affected (i.e., more -> redder)
+    for k, v in stateSumDict.items():
         if v[0] <= 50000:
             v.append("#F5A6A6")
         elif v[0] <= 150000:
@@ -55,11 +55,17 @@ for excel_file in excel_files:
         elif v[0] > 5000000:
             v.append("#FF0000")
         
-    print(temp.values())
+    #convert and write stateSum dictionary into json
+    json_str = json.dumps(stateSumDict, indent=4, sort_keys=True, default=str)
+    output_file = os.path.splitext(excel_file)[0] + '_stateAgg' + '.json'
+    output_path = os.path.join(json_dir, output_file)
+    with open(output_path, 'w', encoding = 'utf-8') as f:
+        f.write(json_str)
+    print('Wrote to: ' + output_path)
     
-    #convert dictionary into json
-    json_str = json.dumps(temp, indent=4, sort_keys=True, default=str)
-    output_file = os.path.splitext(excel_file)[0] + '.json'
+    #convert and write full dictionary into json
+    json_str = json.dumps(fullDict, indent=4, sort_keys=True, default=str)
+    output_file = os.path.splitext(excel_file)[0] + '_full' + '.json'
     output_path = os.path.join(json_dir, output_file)
     with open(output_path, 'w', encoding = 'utf-8') as f:
         f.write(json_str)
