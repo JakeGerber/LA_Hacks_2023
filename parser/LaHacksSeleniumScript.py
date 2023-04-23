@@ -22,7 +22,7 @@ driver = webdriver.Chrome(executable_path=PATH, options=options)
     
 # Create output directory
 if not os.path.exists(datadir):
-    os.makedirs(json_dir)
+    os.makedirs(datadir)
     print('Created output directory at: ' + datadir)
 
 def acquire_reports():
